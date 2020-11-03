@@ -19,6 +19,13 @@ public class BasePlusComissionEmployee extends ComissionEmployee{
     //ganho semanal do funcionario
     @Override
     public double earnings(){
-        return baseSalary+ (comissionRate * grossSales);
+        return baseSalary + super.earnings();
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s\n%s: R$ %.2f",
+            "Salário base e", super.toString(), "Salário base", getBaseSalary()
+        );
     }
 }

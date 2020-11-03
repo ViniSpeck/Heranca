@@ -1,11 +1,11 @@
 //funcionario por comissao é uma subclasse de object
 //nao é necessario ser explicito
 public class ComissionEmployee extends Object{
-    protected final String firstName;
-    protected final String lastName;
-    protected final String cpf;
-    protected double grossSales; //venda bruta
-    protected double comissionRate; //taxa de comissao
+    private final String firstName;
+    private final String lastName;
+    private final String cpf;
+    private double grossSales; //venda bruta
+    private double comissionRate; //taxa de comissao
 
     public ComissionEmployee(String firstName, String lastName, String cpf, double grossSales, double comissionRate) {
         this.firstName = firstName;
