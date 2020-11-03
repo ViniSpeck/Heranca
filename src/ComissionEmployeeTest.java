@@ -1,7 +1,7 @@
 public class ComissionEmployeeTest {
     public static void main(String[] args) {
-        ComissionEmployee employee = new ComissionEmployee(
-                "João", "Silva", "123.456.789-00", 1200, 10000, .1
+        BasePlusComissionEmployee employee = new BasePlusComissionEmployee(
+                "João", "Silva", "123.456.789-00", 1000, .1, 1200
         );
         System.out.println("Imprimindo dados por métodos get: ");
         System.out.println("Nome: " + employee.getFirstName());
